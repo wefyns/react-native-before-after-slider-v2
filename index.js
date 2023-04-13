@@ -158,7 +158,7 @@ export default function Compare(props) {
         },
       }),
     });
-  }, [props]);
+  }, [props, state.currentLeft]);
 
   const renderChildren = (props, state) => {
     return React.Children.map(props.children, (child) => {
